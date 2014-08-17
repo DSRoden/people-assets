@@ -1,0 +1,14 @@
+extends ../shared/template
+block content
+  h1 Create a New Person!
+
+  #newPerson
+    form(method='post', action='/people')
+      input(name='name', type='text', placeholder='Bob Jones', autofocus=true)
+      input(name='photo', type='text', placeholder='Photo Url')
+      input(name='cash', type='number', placeholder='100')
+      button Create!
+
+
+block scripts
+  script(src='/js/user/people.js')

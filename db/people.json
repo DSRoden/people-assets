@@ -1,20 +1,19 @@
 {
   "_id":{"$oid":"000000000000000000000001"},
-  "name":"Bob Jones",
-  "age":25,
-  "money":12834.45,
-  "birthday":{"$date":477295200000},
-  "photo":"http://images.com/bob.jpg",
-  "isEmployed":true,
-  "atomsInBody":7600500400300200100,
-  "spouse":{"name":"Janet", "age":21},
-  "things":["blue", 3, 3.14, true, null, {"a":7}, [3,5,7]],
-  "address":{"$undefined":true},
-  "resume":null,
-  "employeeId":{"$oid":"000000000000000000000002"}
+  "name":"Bart",
+  "photo":"http://img2.wikia.nocookie.net/__cb20120114223254/villains/images/3/39/Bart-simpson.gif",
+  "cash":100,
+  "assets":[{"name": "skateboard", "photo" : "http://thumbs.dreamstime.com/z/skateboard-equipment-vector-24689878.jpg", "count": 2, "value": 100, "total": 200},
+            {"name": "slingshot", "photo" : "http://image.shutterstock.com/display_pic_with_logo/548344/145197271/stock-vector-wooden-slingshot-145197271.jpg", "count": 3, "value": 20, "total": 60}]
 }
+
 {
-  "_id":{"$oid":"000000000000000000000003"},
-  "name":"Jane Marsh"
+  "_id":{"$oid":"000000000000000000000002"},
+  "name":"Lisa",
+  "photo":"http://img2.wikia.nocookie.net/__cb20121028084043/simpsons/images/e/e4/LisaSimpsonStudent.gif",
+  "cash":500,
+  "assets":[{"name": "sax", "photo" : "http://thumbs.dreamstime.com/z/cartoon-brass-saxophone-smiling-face-musical-design-isolated-white-39377964.jpg", "count": 1, "value": 400, "total": 400},
+            {"name": "necklace", "photo" : "http://www.clker.com/cliparts/Z/p/h/5/f/t/necklace-aqua-beads-hi.png", "count": 1, "value": 500, "total":500}]
 }
+
 

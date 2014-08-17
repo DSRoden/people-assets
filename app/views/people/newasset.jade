@@ -1,0 +1,16 @@
+extends ../shared/template
+block content
+
+  h1 Add an asset!
+
+  #asset
+    form(method='post', action='/people/#{id}/assets')
+      input(name='name', type='text', placeholder='Chair', autofocus=true)
+      input(name='photo', type='text', placeholder='Photo Url')
+      input(name='count', type='number', placeholder='1')
+      input(name='value', type='number', placeholder='100')
+      button Create!
+
+
+block scripts
+  script(src='/js/user/people.js')

@@ -6,7 +6,19 @@
 }
 
 body{
-  background-image: url(/img/node.png);
-  background-size: cover;
+  /*background-image: url(/img/node.png);*/
+  /*background-size: cover;*/
 }
 
+
+
+td {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.photo {
+  background-size: cover;
+}

@@ -1,0 +1,27 @@
+extends ../shared/template
+block content
+  h1= person.name
+  .personphoto(style='background-image: url(#{person.photo});')
+  h2 Assets
+  h2: a(href='/people/#{person._id}/assets/new') Add Asset
+  table
+    thead
+      tr
+        th Name
+        th Photo
+        th Value
+        th Count
+        th Total Value
+
+    tbody
+      each asset in person.assets
+        tr
+          td= asset.name
+          td.assetphoto(style='background-image: url(#{asset.photo});')
+          td= asset.value
+          td= asset.count
+          td= asset.count * asset.value
+
+block scripts
+  script(src='/js/user/people.js')
+

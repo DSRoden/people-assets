@@ -1,0 +1,25 @@
+extends ../shared/template
+block content
+  h1 People
+  h2: a(href='/people/new') New Person
+
+  table
+    thead
+      tr
+        th Name
+        th Photo
+        th Cash
+        th Assets
+    tbody#p
+      each person in people
+        tr(data-person-id=person._id.toString())
+          td: a(href='people/#{person._id}')= person.name
+          td.photo(style='background-image: url(#{person.photo});')
+          td= person.cash
+          td: total #{person.assets.length}
+          td
+            button.delete Remove Person
+
+block scripts
+script(src='/js/user/people.js')
+
